@@ -1,0 +1,314 @@
+{
+  "lib/manifest.js": {
+    "mtime": 1789037433.4933834,
+    "seen": 1789122404.0692513,
+    "ast_hash": "314528e0ad44cf01a97b454c7f23dfa6",
+    "semantic_hash": "314528e0ad44cf01a97b454c7f23dfa6"
+  },
+  "main.js": {
+    "mtime": 1789037472.687811,
+    "seen": 1789122404.0692654,
+    "ast_hash": "6b1bae238a712b842292c7767774ae2f",
+    "semantic_hash": "6b1bae238a712b842292c7767774ae2f"
+  },
+  "404.html": {
+    "mtime": 1789037927.5842993,
+    "seen": 1789122404.069271,
+    "ast_hash": "f74eb6849750352e59aac9c55cd70ecc",
+    "semantic_hash": "f74eb6849750352e59aac9c55cd70ecc"
+  },
+  "COM-EDITAR.md": {
+    "mtime": 1789038128.0794036,
+    "seen": 1789122404.0692742,
+    "ast_hash": "0b3830e47404cff37fc4c81c336420b7",
+    "semantic_hash": "0b3830e47404cff37fc4c81c336420b7"
+  },
+  "ajudes-i-suport.html": {
+    "mtime": 1789037677.3553672,
+    "seen": 1789122404.0692766,
+    "ast_hash": "3958a37617f69cbdcb393d7467b5a45a",
+    "semantic_hash": "3958a37617f69cbdcb393d7467b5a45a"
+  },
+  "clinic.html": {
+    "mtime": 1789037927.593638,
+    "seen": 1789122404.0692794,
+    "ast_hash": "c554f50bf87a01eda0847aa3f4dfe788",
+    "semantic_hash": "c554f50bf87a01eda0847aa3f4dfe788"
+  },
+  "contacte.html": {
+    "mtime": 1789037927.5966408,
+    "seen": 1789122404.069283,
+    "ast_hash": "a758330baaf7bfbd9c478f04e8bf5b01",
+    "semantic_hash": "a758330baaf7bfbd9c478f04e8bf5b01"
+  },
+  "empresa.html": {
+    "mtime": 1789037677.3573344,
+    "seen": 1789122404.0692854,
+    "ast_hash": "059276d9e17810922a804a47f3b18703",
+    "semantic_hash": "059276d9e17810922a804a47f3b18703"
+  },
+  "equip.html": {
+    "mtime": 1789037899.5207288,
+    "seen": 1789122404.0692887,
+    "ast_hash": "c4a0481ada59c470a5a9e8240277f87a",
+    "semantic_hash": "c4a0481ada59c470a5a9e8240277f87a"
+  },
+  "index.html": {
+    "mtime": 1789037927.5996406,
+    "seen": 1789122404.0692914,
+    "ast_hash": "2f5a74bce4798299f40ffde48542c76d",
+    "semantic_hash": "2f5a74bce4798299f40ffde48542c76d"
+  },
+  "institut.html": {
+    "mtime": 1789037927.6006427,
+    "seen": 1789122404.0692937,
+    "ast_hash": "77880945274716f5712a17551c0872ec",
+    "semantic_hash": "77880945274716f5712a17551c0872ec"
+  },
+  "legal/avis-legal.html": {
+    "mtime": 1789037927.6031785,
+    "seen": 1789122404.0692973,
+    "ast_hash": "7babe7d357f917d9fd3f873060545405",
+    "semantic_hash": "7babe7d357f917d9fd3f873060545405"
+  },
+  "legal/politica-cookies.html": {
+    "mtime": 1789037927.6081932,
+    "seen": 1789122404.0692997,
+    "ast_hash": "63e5d3493543bddcc0b22ebca7a9ff1e",
+    "semantic_hash": "63e5d3493543bddcc0b22ebca7a9ff1e"
+  },
+  "legal/politica-privacitat.html": {
+    "mtime": 1789037927.611193,
+    "seen": 1789122404.0693028,
+    "ast_hash": "74094dcffa91520536ef6aa457108f66",
+    "semantic_hash": "74094dcffa91520536ef6aa457108f66"
+  },
+  "nosaltres.html": {
+    "mtime": 1789037927.614731,
+    "seen": 1789122404.0693052,
+    "ast_hash": "2b9d170be43b762b13567b8e92069768",
+    "semantic_hash": "2b9d170be43b762b13567b8e92069768"
+  },
+  "robots.txt": {
+    "mtime": 1788967945.20801,
+    "seen": 1789122404.0693073,
+    "ast_hash": "e629ea464cad14d9f61de17c0b029409",
+    "semantic_hash": "e629ea464cad14d9f61de17c0b029409"
+  },
+  "serveis/grups-terapeutics.html": {
+    "mtime": 1789037927.6167297,
+    "seen": 1789122404.0693102,
+    "ast_hash": "3fc86dac0d14c256aeafd8517790fd8b",
+    "semantic_hash": "3fc86dac0d14c256aeafd8517790fd8b"
+  },
+  "serveis/habilitats-socials.html": {
+    "mtime": 1789037927.62074,
+    "seen": 1789122404.0693126,
+    "ast_hash": "411cde3c9677fb782c522d3c94c047ae",
+    "semantic_hash": "411cde3c9677fb782c522d3c94c047ae"
+  },
+  "serveis/logopedia.html": {
+    "mtime": 1789037927.624283,
+    "seen": 1789122404.0693154,
+    "ast_hash": "b9ed4b7c8aa626592f5d498610b97fbd",
+    "semantic_hash": "b9ed4b7c8aa626592f5d498610b97fbd"
+  },
+  "serveis/psicologia-clinica.html": {
+    "mtime": 1789037927.6273096,
+    "seen": 1789122404.0693183,
+    "ast_hash": "b2312356a68c58b4af81d637b1bb1eb4",
+    "semantic_hash": "b2312356a68c58b4af81d637b1bb1eb4"
+  },
+  "serveis/psicologia.html": {
+    "mtime": 1789037927.629293,
+    "seen": 1789122404.069321,
+    "ast_hash": "32667c08cf2f7b07a303a76b625b9eb2",
+    "semantic_hash": "32667c08cf2f7b07a303a76b625b9eb2"
+  },
+  "serveis/psicopedagogia.html": {
+    "mtime": 1789037927.6312819,
+    "seen": 1789122404.0693238,
+    "ast_hash": "939fc9f058970d2b45430646fe77570e",
+    "semantic_hash": "939fc9f058970d2b45430646fe77570e"
+  },
+  "serveis/psiquiatria.html": {
+    "mtime": 1789037927.6368272,
+    "seen": 1789122404.0693276,
+    "ast_hash": "ddd9dd1522d023991754b81509d349cb",
+    "semantic_hash": "ddd9dd1522d023991754b81509d349cb"
+  },
+  "serveis/reforc-escolar.html": {
+    "mtime": 1789037927.6388211,
+    "seen": 1789122404.0693305,
+    "ast_hash": "177d50f7f9d0340e4ab1d3ab4ac24ec4",
+    "semantic_hash": "177d50f7f9d0340e4ab1d3ab4ac24ec4"
+  },
+  "uad.html": {
+    "mtime": 1789037927.6463828,
+    "seen": 1789122404.069333,
+    "ast_hash": "f8de11baa69627c8adf0f912e8fb9bcb",
+    "semantic_hash": "f8de11baa69627c8adf0f912e8fb9bcb"
+  },
+  "assets/favicon.svg": {
+    "mtime": 1788967942.7181582,
+    "seen": 1789122404.0693362,
+    "ast_hash": "c1526505c391585f751b2102fbdafe1f",
+    "semantic_hash": "c1526505c391585f751b2102fbdafe1f"
+  },
+  "assets/img/clinic-room.webp": {
+    "mtime": 1788971740.2060227,
+    "seen": 1789122404.069339,
+    "ast_hash": "82b0441e94a1bf774eec1af2822fa560",
+    "semantic_hash": "82b0441e94a1bf774eec1af2822fa560"
+  },
+  "assets/img/clinic-wide.webp": {
+    "mtime": 1788971740.901639,
+    "seen": 1789122404.0693424,
+    "ast_hash": "5d99604955f7ea57fb8dbd3bd0ddf2c0",
+    "semantic_hash": "5d99604955f7ea57fb8dbd3bd0ddf2c0"
+  },
+  "assets/img/hero-detail.webp": {
+    "mtime": 1788971741.505979,
+    "seen": 1789122404.0693452,
+    "ast_hash": "91fb42b762f0b253908e19381d1cedab",
+    "semantic_hash": "91fb42b762f0b253908e19381d1cedab"
+  },
+  "assets/img/hero-portrait.webp": {
+    "mtime": 1788971742.299006,
+    "seen": 1789122404.0693483,
+    "ast_hash": "91bd1669bb11c6ecc5032a16516478f4",
+    "semantic_hash": "91bd1669bb11c6ecc5032a16516478f4"
+  },
+  "assets/img/institut-room.webp": {
+    "mtime": 1788971743.0994573,
+    "seen": 1789122404.0693514,
+    "ast_hash": "fcbd7069d3cab53bb2478dbe907e356c",
+    "semantic_hash": "fcbd7069d3cab53bb2478dbe907e356c"
+  },
+  "assets/img/institut-wide.webp": {
+    "mtime": 1788971743.7883635,
+    "seen": 1789122404.0694542,
+    "ast_hash": "e67f8f80eeb18b682a3dfb68973a0a63",
+    "semantic_hash": "e67f8f80eeb18b682a3dfb68973a0a63"
+  },
+  "assets/img/nosaltres-archive.webp": {
+    "mtime": 1788971744.806434,
+    "seen": 1789122404.0694597,
+    "ast_hash": "708608c2fca9d3734fe2a557cecb20e7",
+    "semantic_hash": "708608c2fca9d3734fe2a557cecb20e7"
+  },
+  "assets/img/serv-grups.webp": {
+    "mtime": 1788971745.6610677,
+    "seen": 1789122404.069464,
+    "ast_hash": "f70d202ff66c32893577d10d292f194f",
+    "semantic_hash": "f70d202ff66c32893577d10d292f194f"
+  },
+  "assets/img/serv-habilitats.webp": {
+    "mtime": 1788971746.622093,
+    "seen": 1789122404.0694673,
+    "ast_hash": "3a26de301efb6c6428da50f2a165639b",
+    "semantic_hash": "3a26de301efb6c6428da50f2a165639b"
+  },
+  "assets/img/serv-logopedia.webp": {
+    "mtime": 1788971747.388132,
+    "seen": 1789122404.069471,
+    "ast_hash": "d6a42b9efd7485c92ac3b310f3aa20b2",
+    "semantic_hash": "d6a42b9efd7485c92ac3b310f3aa20b2"
+  },
+  "assets/img/serv-psicologia-clinica.webp": {
+    "mtime": 1788971748.227127,
+    "seen": 1789122404.0694742,
+    "ast_hash": "87f0bde887339780e52033d9bbfcf2f5",
+    "semantic_hash": "87f0bde887339780e52033d9bbfcf2f5"
+  },
+  "assets/img/serv-psicologia.webp": {
+    "mtime": 1788971748.9962587,
+    "seen": 1789122404.0694776,
+    "ast_hash": "f103185e56b3fc42b6af360542672cb2",
+    "semantic_hash": "f103185e56b3fc42b6af360542672cb2"
+  },
+  "assets/img/serv-psicopedagogia.webp": {
+    "mtime": 1788971749.7919278,
+    "seen": 1789122404.0694802,
+    "ast_hash": "3d1df941098f3f6d0df8862c807273e8",
+    "semantic_hash": "3d1df941098f3f6d0df8862c807273e8"
+  },
+  "assets/img/serv-psiquiatria.webp": {
+    "mtime": 1788971750.5070565,
+    "seen": 1789122404.0694828,
+    "ast_hash": "ebd161ca289dcec12a4441384e314dd5",
+    "semantic_hash": "ebd161ca289dcec12a4441384e314dd5"
+  },
+  "assets/img/serv-reforc-escolar.webp": {
+    "mtime": 1788971751.2223656,
+    "seen": 1789122404.0694854,
+    "ast_hash": "2477203e30363883acfd744d63067075",
+    "semantic_hash": "2477203e30363883acfd744d63067075"
+  },
+  "assets/img/team-andrea-martinez.webp": {
+    "mtime": 1789037331.3387735,
+    "seen": 1789122404.069488,
+    "ast_hash": "54823ca3288e400510be80f3ed154dba",
+    "semantic_hash": "54823ca3288e400510be80f3ed154dba"
+  },
+  "assets/img/team-anna-cantudo.webp": {
+    "mtime": 1789037331.412258,
+    "seen": 1789122404.0694914,
+    "ast_hash": "ecad98524431b6ffddde496e489909f8",
+    "semantic_hash": "ecad98524431b6ffddde496e489909f8"
+  },
+  "assets/img/team-anna-de-pablos.webp": {
+    "mtime": 1789037331.473972,
+    "seen": 1789122404.0695,
+    "ast_hash": "dccec21aba6db1af69b8c8f8863907df",
+    "semantic_hash": "dccec21aba6db1af69b8c8f8863907df"
+  },
+  "assets/img/team-enya-panadero.webp": {
+    "mtime": 1789037331.5408547,
+    "seen": 1789122404.069503,
+    "ast_hash": "ce80afbd5291c43ebd67b4f9ec4265e1",
+    "semantic_hash": "ce80afbd5291c43ebd67b4f9ec4265e1"
+  },
+  "assets/img/team-jose-perez.webp": {
+    "mtime": 1789037331.6160433,
+    "seen": 1789122404.0695064,
+    "ast_hash": "e243df4ddc7440de128156470687b0da",
+    "semantic_hash": "e243df4ddc7440de128156470687b0da"
+  },
+  "assets/img/team-laia-pons.webp": {
+    "mtime": 1789037331.697083,
+    "seen": 1789122404.069509,
+    "ast_hash": "63e56915524c5dc1bb8383d16137dafb",
+    "semantic_hash": "63e56915524c5dc1bb8383d16137dafb"
+  },
+  "assets/img/team-laia-salas.webp": {
+    "mtime": 1789037331.7733936,
+    "seen": 1789122404.0695117,
+    "ast_hash": "4180853827bcde9d104ce48073ec91d3",
+    "semantic_hash": "4180853827bcde9d104ce48073ec91d3"
+  },
+  "assets/img/team-maria-carrillo.webp": {
+    "mtime": 1789037331.8310125,
+    "seen": 1789122404.0695145,
+    "ast_hash": "a37460aca8a255121ac32ec311f476a8",
+    "semantic_hash": "a37460aca8a255121ac32ec311f476a8"
+  },
+  "assets/img/team-maria-de-pablo.webp": {
+    "mtime": 1789037331.9010217,
+    "seen": 1789122404.0695176,
+    "ast_hash": "a36f78281f1f00a8ec022a8b83675a02",
+    "semantic_hash": "a36f78281f1f00a8ec022a8b83675a02"
+  },
+  "assets/img/team-maria-rodriguez.webp": {
+    "mtime": 1789037331.9701772,
+    "seen": 1789122404.0695205,
+    "ast_hash": "44f6779b538f3d24f7138fd760f090f8",
+    "semantic_hash": "44f6779b538f3d24f7138fd760f090f8"
+  },
+  "assets/img/uad-materials.webp": {
+    "mtime": 1788971752.0632153,
+    "seen": 1789122404.0695229,
+    "ast_hash": "65ad54e15c579ef2f41001ee6c9b8020",
+    "semantic_hash": "65ad54e15c579ef2f41001ee6c9b8020"
+  }
+}
