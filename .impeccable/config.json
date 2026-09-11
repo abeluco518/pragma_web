@@ -1,0 +1,17 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "layout-transition",
+        "value": "*",
+        "files": [
+          "styles.css"
+        ],
+        "createdAt": "2026-09-11T19:03:12.121Z",
+        "reason": "site-header padding-block transition (L429) is a fixed-position, self-contained element toggling once per scroll-threshold crossing, not a continuous/cascading reflow; pre-existing pattern outside this session's requested scope"
+      }
+    ]
+  }
+}

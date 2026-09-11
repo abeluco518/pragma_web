@@ -17,13 +17,13 @@
   --paper:       #fdfbf6;   /* blanc càlid */
   --ink:         #1b2a2c;   /* blau nit molt fosc — text principal */
   --ink-soft:    #33474a;
-  --ink-mute:    #6a7a79;   /* metadades */
+  --ink-mute:    #5f6e6d;   /* metadades — ajustat per complir contrast AA (4.5:1) sobre bone/paper */
   --petrol:      #123338;   /* blau petroli profund — marca paraigua */
   --petrol-2:    #0d262a;
   --sage:        #8ba18c;   /* verd salvia / grisós */
   --sage-deep:   #5f7360;
   --sand:        #c9b598;   /* sorra / pedra càlida */
-  --terracotta:  #b25f39;   /* accent Institut, molt controlat */
+  --terracotta:  #a45734;   /* accent Institut, molt controlat — ajustat per complir contrast AA en text petit */
   --terracotta-soft: #c98a68;
   --clinic:      #2c5751;   /* verd petroli més profund — Clínic */
   --clinic-soft: #6f9088;
@@ -452,7 +452,7 @@ h1 em, h2 em, h3 em {
   color: var(--text);
   z-index: 2;
 }
-.brand svg { width: 1.55rem; height: 1.55rem; flex: none; }
+.brand svg { height: 1.85rem; width: auto; flex: none; }
 .brand strong { font-weight: 400; }
 .brand .brand-sub {
   font-family: var(--sans);
@@ -487,6 +487,79 @@ h1 em, h2 em, h3 em {
 }
 .nav-primary a:hover, .nav-primary a[aria-current="page"] { color: var(--text); }
 .nav-primary a:hover::after, .nav-primary a[aria-current="page"]::after { transform: scaleX(1); transform-origin: left; }
+
+/* --- Desplegable de serveis (Institut / Clínic) al menú principal --- */
+.nav-drop { position: relative; }
+.nav-drop > a { display: inline-flex; align-items: center; }
+.nav-drop-caret {
+  display: inline-block;
+  width: .36rem; height: .36rem;
+  margin-left: .38rem; margin-bottom: .1rem;
+  border-right: 1.5px solid currentColor;
+  border-bottom: 1.5px solid currentColor;
+  opacity: .55;
+  transform: rotate(45deg);
+  transition: transform .35s var(--ease-out), opacity .35s var(--ease-out);
+}
+.nav-drop:hover .nav-drop-caret,
+.nav-drop:focus-within .nav-drop-caret { transform: rotate(225deg); margin-bottom: -.05rem; opacity: .9; }
+
+.nav-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-top: .9rem;
+  min-width: 17rem;
+  padding: .6rem;
+  display: grid;
+  gap: .05rem;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-lift);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateX(-50%) translateY(2px);
+  transition: opacity .25s var(--ease-out), transform .25s var(--ease-out), visibility 0s .25s;
+  z-index: 60;
+}
+.nav-drop:hover .nav-dropdown,
+.nav-drop:focus-within .nav-dropdown {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateX(-50%) translateY(0);
+  transition: opacity .25s var(--ease-out), transform .25s var(--ease-out), visibility 0s;
+}
+.nav-dropdown-label {
+  font-size: var(--step--2);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  padding: .35rem .7rem .5rem;
+}
+.nav-dropdown a {
+  display: block;
+  padding: .55rem .7rem;
+  border-radius: 8px;
+  font-size: var(--step--1);
+  font-weight: 450;
+  color: var(--ink-soft);
+  white-space: nowrap;
+  transition: background-color .25s var(--ease-out), color .25s var(--ease-out);
+}
+.nav-dropdown a:hover, .nav-dropdown a:focus-visible { background: var(--branch-tint); color: var(--text); }
+.nav-dropdown-all {
+  margin-top: .3rem;
+  padding-top: .8rem !important;
+  border-top: 1px solid var(--line-soft);
+  color: var(--accent) !important;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: .4rem;
+}
 
 .header-cta { display: inline-flex; align-items: center; gap: 1rem; }
 
@@ -536,7 +609,7 @@ body.nav-open .nav-drawer {
 .nav-drawer li {
   overflow: hidden;
 }
-.nav-drawer a {
+.nav-drawer a, .nav-drawer summary {
   display: block;
   font-family: var(--serif);
   font-size: clamp(1.35rem, 1rem + 2.6vw, 2.35rem);
@@ -546,8 +619,46 @@ body.nav-open .nav-drawer {
   transform: translateY(110%);
   transition: transform .6s var(--ease-out);
 }
-.nav-drawer a[aria-current="page"] { color: var(--accent); font-style: italic; }
-body.nav-open .nav-drawer a { transform: translateY(0); }
+.nav-drawer a[aria-current="page"], .nav-drawer summary[aria-current="page"] { color: var(--accent); font-style: italic; }
+body.nav-open .nav-drawer a, body.nav-open .nav-drawer summary { transform: translateY(0); }
+
+/* --- Grups plegables (Institut / Clínic) al menú mòbil --- */
+.drawer-group summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  cursor: pointer;
+  list-style: none;
+}
+.drawer-group summary::-webkit-details-marker { display: none; }
+.drawer-group summary::after {
+  content: "";
+  width: .5rem; height: .5rem; flex: none;
+  margin-bottom: .35rem;
+  border-right: 1.5px solid currentColor;
+  border-bottom: 1.5px solid currentColor;
+  opacity: .5;
+  transform: rotate(45deg);
+  transition: transform .35s var(--ease-out);
+}
+.drawer-group[open] summary::after { transform: rotate(-135deg); }
+.drawer-sub {
+  display: grid;
+  gap: .1rem;
+  padding: .2rem 0 1.2rem;
+}
+.drawer-sub a {
+  font-family: var(--sans);
+  font-size: var(--step-0);
+  font-weight: 450;
+  line-height: 1.3;
+  padding-block: .55rem;
+  color: var(--ink-soft);
+  transform: none;
+}
+.drawer-sub a[aria-current="page"] { color: var(--accent); font-style: normal; font-weight: 600; }
+.drawer-sub .nav-dropdown-all { color: var(--accent); font-weight: 500; }
 body.nav-open .nav-drawer li:nth-child(1) a { transition-delay: .10s; }
 body.nav-open .nav-drawer li:nth-child(2) a { transition-delay: .14s; }
 body.nav-open .nav-drawer li:nth-child(3) a { transition-delay: .18s; }
@@ -589,6 +700,7 @@ body.nav-open .nav-drawer .drawer-foot { opacity: 1; }
   line-height: 0.98;
   letter-spacing: -0.03em;
   font-weight: 340;
+  overflow-wrap: break-word;
 }
 .hero-title .row { display: block; overflow: hidden; }
 .hero-title .row > span {
@@ -934,11 +1046,13 @@ body.nav-open .nav-drawer .drawer-foot { opacity: 1; }
   position: absolute;
   left: 0; bottom: -1px;
   height: 1px;
-  width: 0;
+  width: 100%;
   background: var(--sand);
-  transition: width 1s var(--ease-out);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 1s var(--ease-out);
 }
-.uad-step.is-visible::after { width: 100%; }
+.uad-step.is-visible::after { transform: scaleX(1); }
 .uad-note {
   margin-top: 2rem;
   font-size: var(--step--1);
@@ -1164,6 +1278,7 @@ body.nav-open .nav-drawer .drawer-foot { opacity: 1; }
   font-size: var(--step-5);
   line-height: 1.0;
   max-width: 16ch;
+  overflow-wrap: break-word;
 }
 .page-hero .page-title em { color: var(--accent); font-style: italic; }
 .page-hero .page-intro {
@@ -1395,6 +1510,13 @@ body.nav-open .nav-drawer .drawer-foot { opacity: 1; }
 /* =============================================================
    10. RESPONSIVE
    ============================================================= */
+@media (max-width: 700px) {
+  /* La mida fluida base (--step-6) es queda massa gran en mòbils: la paraula
+     "desenvolupament" no hi cap dins una fila i queda tallada. Escala pròpia,
+     més conservadora, només per a aquest rang. */
+  .hero-title { font-size: clamp(2.2rem, 11vw, 4.85rem); }
+}
+
 @media (min-width: 540px) {
   .orient-options { gap: 1rem; }
   .field-row { grid-template-columns: 1fr 1fr; }
@@ -1434,13 +1556,9 @@ body.nav-open .nav-drawer .drawer-foot { opacity: 1; }
   .services-editorial { grid-template-columns: repeat(3, 1fr); }
 }
 
-@media (max-width: 1279px) {
+@media (max-width: 959px) {
   .nav-primary { display: none; }
   .nav-toggle { display: inline-flex; }
-  .header-cta { display: none; }
-}
-/* Marge extra abans de passar a menú: amaga el botó del header entre 1280 i 1420 */
-@media (min-width: 1280px) and (max-width: 1419px) {
   .header-cta { display: none; }
 }
 
