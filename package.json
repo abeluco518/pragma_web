@@ -1,0 +1,16 @@
+{
+  "name": "pragma-web",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Lloc web de Grup Pragma (Pragma Institut i Pragma Clínic) — Molins de Rei.",
+  "homepage": "https://grup-pragma.cat",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:abeluco518/pragma_web.git"
+  },
+  "scripts": {
+    "start": "npx --yes serve -l 5000 .",
+    "dev": "npx --yes serve -l 5000 ."
+  },
+  "license": "UNLICENSED"
+}
