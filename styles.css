@@ -1556,7 +1556,10 @@ body.nav-open .nav-drawer .drawer-foot { opacity: 1; }
   .services-editorial { grid-template-columns: repeat(3, 1fr); }
 }
 
-@media (max-width: 959px) {
+@media (max-width: 1179px) {
+  /* Etiquetes completes al menú (Desenvolupament i aprenentatge / Serveis
+     clínics / Avaluació i diagnòstic): calen més de 960px per no xocar amb
+     el botó "Demanar hora". Verificat: es trenca sota ~1060px. */
   .nav-primary { display: none; }
   .nav-toggle { display: inline-flex; }
   .header-cta { display: none; }
