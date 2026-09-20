@@ -61,7 +61,8 @@ Archivos principales (y su sección en el menú):
 - `uad.html` — «Avaluació i diagnòstic»
 - `nosaltres.html` — «Qui som» (proyecto + equipo, ancla `#equip`)
 - `contacte.html` — «Contacte»
-- `ajudes-i-suport.html` y `empresa.html` — de momento solo "Properament"
+- `empresa.html` — «PRAGMA Empresa» (contenido del dossier comercial 2026: Assist, Managers, Teams, confidencialidad, modalidades). Sin precios: el dossier dice que van en propuesta comercial
+- `ajudes-i-suport.html` — de momento solo "Properament"
 - carpeta `serveis/` — una página por servicio
 - carpeta `legal/` — aviso legal, privacidad y cookies (pendientes de revisar con un abogado)
 

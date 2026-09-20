@@ -89,7 +89,7 @@
     wrap.innerHTML = list.map(function (p) {
       var meta = [p.col, p.areas].filter(Boolean).join(" · ");
       var media = p.photo
-        ? '<img class="media media--portrait" src="' + escHTML(base + p.photo) + '" alt="Retrat de ' + escHTML(p.name) + ', ' + escHTML(p.role) + '" width="210" height="263" loading="lazy" decoding="async">'
+        ? '<div class="team-photo"><img class="media media--portrait" src="' + escHTML(base + p.photo) + '" alt="Retrat de ' + escHTML(p.name) + ', ' + escHTML(p.role) + '" width="800" height="1000" loading="lazy" decoding="async"></div>'
         : '<span class="ph ph--portrait" role="img" aria-label="Fotografia pendent de ' + escHTML(p.name) + '" data-label="Foto pendent"><span class="ph-mono" aria-hidden="true">P</span></span>';
       return '' +
         '<article class="team-card" data-reveal>' +
@@ -99,7 +99,6 @@
             '<p class="t-role">' + escHTML(p.role) + '</p>' +
             (meta ? '<p class="t-meta">' + escHTML(meta) + '</p>' : '') +
             (p.desc ? '<p class="t-desc">' + escHTML(p.desc) + '</p>' : '') +
-            '<p class="t-branch">Pragma ' + escHTML(p.branch) + '</p>' +
           '</div>' +
         '</article>';
     }).join("");
@@ -156,8 +155,8 @@
       var rows = [];
       var telHref = c.phoneHref || (c.phone && c.phone.indexOf("PENDENT") === -1 ? "tel:" + c.phone.replace(/\s/g, "") : "");
       rows.push(linkRow(telHref, iconPhone(), "Trucar", c.phone || "[PENDENT]"));
+      if (c.whatsapp) rows.push(linkRow(c.whatsapp, iconChat(), "WhatsApp", c.whatsappNumber || "Obrir conversa"));
       rows.push(linkRow(c.email && c.email.indexOf("PENDENT") === -1 ? "mailto:" + c.email : "", iconMail(), "Escriure", c.email || "[PENDENT]"));
-      if (c.whatsapp) rows.push(linkRow(c.whatsapp, iconChat(), "WhatsApp", "Obrir conversa"));
       var firstCenter = (D.centers && D.centers[0]) || {};
       rows.push(linkRow(firstCenter.mapUrl || "", iconPin(), "Com arribar", firstCenter.address || (D.brand ? D.brand.place : "Molins de Rei")));
       if (c.hours) {

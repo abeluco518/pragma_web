@@ -50,7 +50,7 @@
   --step-3:  clamp(1.85rem, 1.55rem + 1.50vw, 2.85rem);
   --step-4:  clamp(2.30rem, 1.80rem + 2.50vw, 4.00rem);
   --step-5:  clamp(2.90rem, 2.05rem + 4.20vw, 5.80rem);
-  --step-6:  clamp(3.40rem, 2.10rem + 6.20vw, 7.60rem);
+  --step-6:  clamp(3.40rem, 2.10rem + 5.20vw, 6.60rem);   /* més contingut: "el desenvolupament," ha de cabre en una línia sense tocar la imatge */
 
   /* --- Ritme i mesura --- */
   --gutter:  clamp(1.25rem, 0.8rem + 3.5vw, 4.5rem);
@@ -703,6 +703,11 @@ body.nav-open .nav-drawer .drawer-foot { opacity: 1; }
   overflow-wrap: break-word;
 }
 .hero-title .row { display: block; overflow: hidden; }
+/* "el desenvolupament," ha de quedar en una sola línia: la fila s'eixampla
+   més enllà de la columna (el text passa per sobre de la imatge, no la comprimeix) */
+.hero-title .row--nowrap { width: max-content; }
+.hero-title .row--nowrap > span { white-space: nowrap; }
+.hero-lede { min-width: 0; }
 .hero-title .row > span {
   display: block;
   transform: translateY(100%);
@@ -980,6 +985,7 @@ body.nav-open .nav-drawer .drawer-foot { opacity: 1; }
   color: var(--muted);
   letter-spacing: 0.1em;
 }
+.service-row h3,
 .service-row h4 {
   font-family: var(--serif);
   font-size: var(--step-2);
@@ -1068,6 +1074,7 @@ body.nav-open .nav-drawer .drawer-foot { opacity: 1; }
 }
 .method-item {
   display: grid;
+  align-content: start;
   gap: .6rem;
   padding: 1.6rem 0;
   border-top: 1px solid var(--line);
@@ -1091,16 +1098,21 @@ body.nav-open .nav-drawer .drawer-foot { opacity: 1; }
 .team-card .ph,
 .team-card .media { border-radius: var(--radius); background: var(--bone-2); }
 .team-card .media { box-shadow: var(--shadow-soft); }
+/* Retrats en blanc i negre amb degradat: fotografia + vel de color inferior */
+.team-photo { position: relative; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-soft); }
+.team-photo .media { box-shadow: none; }
+.team-photo::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #2F4F5C;
+  background: linear-gradient(0deg, rgba(47, 79, 92, 1) 8%, rgba(255, 255, 255, 0) 43%);
+  pointer-events: none;
+}
 .team-card .t-name { font-family: var(--serif); font-size: var(--step-0); font-weight: 400; }
 .team-card .t-role { font-size: var(--step--2); color: var(--accent); font-weight: 500; }
 .team-card .t-meta { font-size: var(--step--2); color: var(--muted); }
 .team-card .t-desc { font-size: var(--step--1); color: var(--ink-soft); }
-.team-card .t-branch {
-  font-size: var(--step--2);
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--muted);
-}
 
 /* --- EXPERIÈNCIA (números) --- */
 .exp { background: var(--bone-2); }
@@ -1338,6 +1350,8 @@ body.nav-open .nav-drawer .drawer-foot { opacity: 1; }
 .page-cta p { color: var(--bone); max-width: 46ch; margin: 1.2rem auto 2rem; }
 .page-cta .eyebrow { color: var(--sand); }
 .page-cta .eyebrow::before { display: none; }
+/* Marca paraigua: el botó (accent = petroli) desapareixeria sobre el fons petroli */
+:root:not([data-branch]) .page-cta .btn { --btn-bg: var(--paper); --btn-fg: var(--petrol); }
 
 /* Grid de serveis de branca (pàgines institut/clinic) */
 .branch-services {
@@ -1368,6 +1382,137 @@ body.nav-open .nav-drawer .drawer-foot { opacity: 1; }
   .duo { grid-template-columns: 1fr 1fr; }
   .duo--text-wide { grid-template-columns: 1.15fr 0.85fr; }
   .branch-services { grid-template-columns: repeat(3, 1fr); }
+}
+
+/* =============================================================
+   7c. PÀGINA EMPRESA
+   ============================================================= */
+section[id] { scroll-margin-top: 5.5rem; }
+
+.pullquote {
+  font-family: var(--serif);
+  font-size: var(--step-3);
+  font-weight: 340;
+  line-height: 1.2;
+  letter-spacing: -0.015em;
+  text-wrap: balance;
+  max-width: 28ch;
+}
+
+.list-title {
+  font-family: var(--sans);
+  font-size: var(--step--1);
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  margin-bottom: 1rem;
+}
+
+/* Llista de definicions (terme + explicació) */
+.def-list { display: grid; border-top: 1px solid var(--line); }
+.def-list > div {
+  display: grid;
+  gap: .3rem 2rem;
+  padding: 1.2rem 0;
+  border-bottom: 1px solid var(--line);
+}
+.def-list dt { font-family: var(--serif); font-size: var(--step-1); font-weight: 380; line-height: 1.2; }
+.def-list dd { color: var(--ink-soft); font-size: var(--step--1); max-width: 56ch; }
+
+/* Llista amb punts */
+.bullet-list { display: grid; gap: .6rem 2.5rem; }
+.bullet-list li { position: relative; padding-left: 1.4rem; color: var(--ink-soft); }
+.bullet-list li::before {
+  content: ""; position: absolute; left: 0; top: .7em;
+  width: 6px; height: 6px; border-radius: 50%; background: var(--accent);
+}
+
+/* Requadre d'atenció (vora completa, sense franja lateral) */
+.note-box {
+  display: grid;
+  gap: .6rem;
+  align-content: start;
+  padding: clamp(1.3rem, 1rem + 1.2vw, 2rem);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--branch-wash);
+}
+.note-box p { color: var(--ink-soft); }
+.note-box .note-title {
+  font-size: var(--step--2);
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+
+/* Formats: nom + durada a l'esquerra, descripció a la dreta */
+.format-list { display: grid; border-top: 1px solid var(--line); margin-top: clamp(2rem, 1rem + 3vw, 3.5rem); }
+.format-row {
+  display: grid;
+  gap: .6rem 2rem;
+  padding: clamp(1.3rem, 1rem + 1.2vw, 2rem) 0;
+  border-bottom: 1px solid var(--line);
+}
+.format-row h3 { font-size: var(--step-2); }
+.format-row .format-meta { color: var(--accent); font-size: var(--step--1); font-weight: 500; margin-top: .3rem; }
+.format-row > p { color: var(--ink-soft); max-width: 58ch; align-self: center; }
+
+/* Preguntes d'exemple */
+.ask-list { display: grid; gap: 1rem; }
+.ask-list li {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: var(--step-1);
+  line-height: 1.35;
+  color: var(--ink-soft);
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--line-soft);
+}
+
+/* Confidencialitat: què sap / què no rep l'empresa */
+.compare { display: grid; gap: 1.5rem; }
+.compare-col {
+  display: grid;
+  gap: 1.1rem;
+  align-content: start;
+  padding: clamp(1.4rem, 1rem + 2vw, 2.4rem);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+}
+.compare-col h3 { font-family: var(--serif); font-size: var(--step-2); }
+.compare-col ul { display: grid; gap: .8rem; }
+.compare-col li { position: relative; padding-left: 1.9rem; color: var(--ink-soft); }
+.compare-col li::before { content: ""; position: absolute; left: 0; }
+.compare-col--yes li::before {
+  top: .45em; width: .8rem; height: .45rem;
+  border-left: 2px solid var(--accent); border-bottom: 2px solid var(--accent);
+  transform: rotate(-45deg);
+}
+.compare-col--no li::before { top: .85em; width: .8rem; height: 2px; background: var(--ink-mute); }
+
+.emp-fine { font-size: var(--step--1); color: var(--ink-soft); max-width: 62ch; }
+.compare + .emp-fine { margin-top: 1.6rem; }
+/* El filet de l'eyebrow (accent = petroli) no es veu sobre fons petroli */
+.uad .eyebrow::before, .centres .eyebrow::before, .assoc .eyebrow::before { background: var(--sand); }
+.emp-lines-title { margin-top: clamp(2.5rem, 1.5rem + 3vw, 4rem); }
+.emp-managers-foot, .emp-proposal { margin-top: clamp(2.5rem, 1.5rem + 3vw, 4rem); }
+.emp-why-text { margin-bottom: clamp(2rem, 1rem + 3vw, 3.5rem); }
+
+.services-editorial.services-editorial--three { grid-template-columns: 1fr; }
+
+@media (min-width: 720px) {
+  .compare { grid-template-columns: 1fr 1fr; }
+  .bullet-list { grid-template-columns: 1fr 1fr; }
+  .def-list--split { grid-template-columns: 1fr 1fr; column-gap: 3rem; }
+  .def-list--split > div { grid-template-columns: 1fr; }
+}
+@media (min-width: 960px) {
+  .services-editorial.services-editorial--three { grid-template-columns: repeat(3, 1fr); }
+  .format-row { grid-template-columns: 1fr 1.5fr; align-items: baseline; }
+  .emp-managers-foot, .emp-proposal { align-items: start; }
 }
 
 /* =============================================================
@@ -1404,6 +1549,7 @@ body.nav-open .nav-drawer .drawer-foot { opacity: 1; }
   margin-bottom: 1rem;
 }
 .footer-col ul { display: grid; gap: .6rem; }
+.footer-col li { font-size: var(--step--1); }
 .footer-col a {
   font-size: var(--step--1);
   color: var(--bone);
@@ -1514,7 +1660,7 @@ body.nav-open .nav-drawer .drawer-foot { opacity: 1; }
   /* La mida fluida base (--step-6) es queda massa gran en mòbils: la paraula
      "desenvolupament" no hi cap dins una fila i queda tallada. Escala pròpia,
      més conservadora, només per a aquest rang. */
-  .hero-title { font-size: clamp(2.2rem, 11vw, 4.85rem); }
+  .hero-title { font-size: clamp(2rem, 10vw, 4.85rem); }
 }
 
 @media (min-width: 540px) {

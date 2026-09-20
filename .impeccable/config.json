@@ -11,6 +11,54 @@
         ],
         "createdAt": "2026-09-11T19:03:12.121Z",
         "reason": "site-header padding-block transition (L429) is a fixed-position, self-contained element toggling once per scroll-threshold crossing, not a continuous/cascading reflow; pre-existing pattern outside this session's requested scope"
+      },
+      {
+        "rule": "clipped-overflow-container",
+        "value": "*",
+        "files": [
+          "contacte.html"
+        ],
+        "createdAt": "2026-09-20T18:17:42.970Z",
+        "reason": "pre-existing shared header/page-hero markup, unchanged by this edit (only a form select field was added); verified empirically earlier this session via headless-Chrome screenshot that the only plausible candidate (.nav-drop absolute dropdown) renders fully unclipped outside its trigger"
+      },
+      {
+        "rule": "layout-transition",
+        "value": "*",
+        "files": [
+          "contacte.html"
+        ],
+        "createdAt": "2026-09-20T18:21:18.007Z",
+        "reason": "same pre-existing .site-header scroll padding-transition already reviewed and cleared this session (styles.css); resurfacing on a per-file scan, not a new issue"
+      },
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "contacte.html"
+        ],
+        "createdAt": "2026-09-20T18:21:18.179Z",
+        "reason": "verified: .field select (.9rem 1rem) and .contact-quick a (1rem 1.15rem) both exceed the 8px floor the rule itself cites; no real violation found in anything touched this task"
+      },
+      {
+        "rule": "overused-font",
+        "value": "inter",
+        "createdAt": "2026-09-20T18:21:18.379Z",
+        "reason": "foundational sitewide typography from the original /impeccable redesign, deliberate choice, out of scope for a contact-form edit"
+      },
+      {
+        "rule": "overused-font",
+        "value": "fraunces",
+        "createdAt": "2026-09-20T18:21:18.547Z",
+        "reason": "foundational sitewide typography from the original /impeccable redesign, deliberate choice, out of scope for a contact-form edit"
+      },
+      {
+        "rule": "cream-palette",
+        "value": "*",
+        "files": [
+          "contacte.html"
+        ],
+        "createdAt": "2026-09-20T18:21:18.724Z",
+        "reason": "foundational sitewide brand palette (mediterrania/editorial) from the original /impeccable redesign, deliberate choice, out of scope for a contact-form edit"
       }
     ]
   }

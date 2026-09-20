@@ -1,92 +1,92 @@
 {
   "lib/manifest.js": {
-    "mtime": 1789152216.488336,
-    "seen": 1789152427.068152,
-    "ast_hash": "75b3e0aa3a4198daae79834d1f628f88",
+    "mtime": 1789929790.0528343,
+    "seen": 1789931284.9049954,
+    "ast_hash": "7d3e46fc55bcf0f3aadb9334d2467452",
     "semantic_hash": ""
   },
   "main.js": {
-    "mtime": 1789037472.687811,
-    "seen": 1789122404.0692654,
-    "ast_hash": "6b1bae238a712b842292c7767774ae2f",
-    "semantic_hash": "6b1bae238a712b842292c7767774ae2f"
+    "mtime": 1789929766.631458,
+    "seen": 1789931284.904999,
+    "ast_hash": "97295b2cfbb7301bfa2dd8fe6227099a",
+    "semantic_hash": ""
   },
   "404.html": {
-    "mtime": 1789152445.74299,
-    "seen": 1789153497.1033392,
-    "ast_hash": "91d1f973dc509224781db3323db33405",
+    "mtime": 1789929838.3619895,
+    "seen": 1789931286.3026226,
+    "ast_hash": "490df0abc44bbc5c26c92d8667dbd7bf",
     "semantic_hash": ""
   },
   "COM-EDITAR.md": {
-    "mtime": 1789038128.0794036,
-    "seen": 1789122404.0692742,
-    "ast_hash": "0b3830e47404cff37fc4c81c336420b7",
-    "semantic_hash": "0b3830e47404cff37fc4c81c336420b7"
+    "mtime": 1789931016.899156,
+    "seen": 1789931286.311878,
+    "ast_hash": "e352ebb83f5ca7db4f484853e2bd285f",
+    "semantic_hash": ""
   },
   "ajudes-i-suport.html": {
-    "mtime": 1789152446.1562314,
-    "seen": 1789153497.1182127,
-    "ast_hash": "1ba7657f2806883746741baae0ad23eb",
+    "mtime": 1789929838.6599665,
+    "seen": 1789931286.3118875,
+    "ast_hash": "05a042c6bea78b3003eff3aac24c68a7",
     "semantic_hash": ""
   },
   "clinic.html": {
-    "mtime": 1789152445.8465717,
-    "seen": 1789153497.1182196,
-    "ast_hash": "46e955450f61dba9a03ea5f1709b773a",
+    "mtime": 1789929838.4121046,
+    "seen": 1789931286.3118901,
+    "ast_hash": "d63e200b04a077eb5b3cb1ba4360123f",
     "semantic_hash": ""
   },
   "contacte.html": {
-    "mtime": 1789152445.8190825,
-    "seen": 1789153497.1182237,
-    "ast_hash": "39f06246efb7bd6f1159acc77960450f",
+    "mtime": 1789931002.8790057,
+    "seen": 1789931286.3118937,
+    "ast_hash": "c14335bcc1b2aed59a6a29308e622763",
     "semantic_hash": ""
   },
   "empresa.html": {
-    "mtime": 1789152445.9254067,
-    "seen": 1789153497.1182275,
-    "ast_hash": "15f517b9bd6b1b9b98f358e207cf6a47",
+    "mtime": 1789930954.832629,
+    "seen": 1789931286.311896,
+    "ast_hash": "5e439805d7bdd8fd291729d871ae640d",
     "semantic_hash": ""
   },
   "equip.html": {
-    "mtime": 1789152445.7175777,
-    "seen": 1789153497.118232,
-    "ast_hash": "6bb3df66d69fa5ef9aaf55d928178a96",
+    "mtime": 1789929838.2479012,
+    "seen": 1789931286.3118987,
+    "ast_hash": "11d1e8b6d0cf6e05fb0028e1b2f78d95",
     "semantic_hash": ""
   },
   "index.html": {
-    "mtime": 1789152445.8892257,
-    "seen": 1789153497.1182356,
-    "ast_hash": "5bd3c608f8c5ed078658cccf500d6dcf",
+    "mtime": 1789931002.9119718,
+    "seen": 1789931286.3119009,
+    "ast_hash": "a638e0cc1c7174c2b5e12704a907b30a",
     "semantic_hash": ""
   },
   "institut.html": {
-    "mtime": 1789152445.9776459,
-    "seen": 1789153497.1182404,
-    "ast_hash": "610802870b22c0173a1e672e8cb496af",
+    "mtime": 1789929838.2911913,
+    "seen": 1789931286.311903,
+    "ast_hash": "b285e8eda58823c414d4aa6f1753686b",
     "semantic_hash": ""
   },
   "legal/avis-legal.html": {
-    "mtime": 1789152446.2664435,
-    "seen": 1789153497.1182446,
-    "ast_hash": "bb958f149ffa16058edc49b9b628d3f3",
+    "mtime": 1789929838.770305,
+    "seen": 1789931286.3119056,
+    "ast_hash": "fe3ed8bf1f9e49b4570bfb260a8191df",
     "semantic_hash": ""
   },
   "legal/politica-cookies.html": {
-    "mtime": 1789152446.2368748,
-    "seen": 1789153497.118249,
-    "ast_hash": "81d4adffd420fc412c09571cbb5c001c",
+    "mtime": 1789929838.6942942,
+    "seen": 1789931286.3119082,
+    "ast_hash": "dc876ff4ee4ac32669721dae40d9fe88",
     "semantic_hash": ""
   },
   "legal/politica-privacitat.html": {
-    "mtime": 1789152446.1875498,
-    "seen": 1789153497.1182528,
-    "ast_hash": "6d251760a99ec223fe8317e09f147384",
+    "mtime": 1789929838.7360725,
+    "seen": 1789931286.311911,
+    "ast_hash": "7a30f27c1fd1dfea34a77e7c4db8c90e",
     "semantic_hash": ""
   },
   "nosaltres.html": {
-    "mtime": 1789152445.780794,
-    "seen": 1789153497.1182563,
-    "ast_hash": "080246da7e44972d7c3f3df81a6b9a0c",
+    "mtime": 1789930101.182843,
+    "seen": 1789931286.3119137,
+    "ast_hash": "3b418f7f188b7162b4e9f85bfa4bce44",
     "semantic_hash": ""
   },
   "robots.txt": {
@@ -96,57 +96,57 @@
     "semantic_hash": "e629ea464cad14d9f61de17c0b029409"
   },
   "serveis/grups-terapeutics.html": {
-    "mtime": 1789152446.3024907,
-    "seen": 1789153497.1551597,
-    "ast_hash": "95d9a7dd7f42b39a1ba8422b2c50f0d0",
+    "mtime": 1789929838.966372,
+    "seen": 1789931286.320002,
+    "ast_hash": "6ea292d4add75dc1230b455068fd431c",
     "semantic_hash": ""
   },
   "serveis/habilitats-socials.html": {
-    "mtime": 1789152446.4836795,
-    "seen": 1789153497.155168,
-    "ast_hash": "0ea2146801f566f569544a6d68d0f463",
+    "mtime": 1789929838.8080025,
+    "seen": 1789931286.3200068,
+    "ast_hash": "3b1adde4fc34edc07faf09457b1b18f8",
     "semantic_hash": ""
   },
   "serveis/logopedia.html": {
-    "mtime": 1789152446.3775976,
-    "seen": 1789153497.1551723,
-    "ast_hash": "6db9655a9434bb2d356035533163dd14",
+    "mtime": 1789929838.8625085,
+    "seen": 1789931286.3200102,
+    "ast_hash": "11ea1965a6f9a4287e7b97b38fac9ce3",
     "semantic_hash": ""
   },
   "serveis/psicologia-clinica.html": {
-    "mtime": 1789152446.4102962,
-    "seen": 1789153497.1551766,
-    "ast_hash": "30e5a477474dd288a9656d0f06245856",
+    "mtime": 1789929839.1561754,
+    "seen": 1789931286.3200135,
+    "ast_hash": "52a2f82782be6bd1509d008752d5f553",
     "semantic_hash": ""
   },
   "serveis/psicologia.html": {
-    "mtime": 1789152446.7003067,
-    "seen": 1789153497.1551805,
-    "ast_hash": "8c361f7309d8722c6cc9e23ceb79fdd6",
+    "mtime": 1789929839.1156876,
+    "seen": 1789931286.3200157,
+    "ast_hash": "99ac96c14a4bb8d66b97ca7864c9b253",
     "semantic_hash": ""
   },
   "serveis/psicopedagogia.html": {
-    "mtime": 1789152446.4458256,
-    "seen": 1789153497.155184,
-    "ast_hash": "075dfc24b3a0a896be47bdee6c61012f",
+    "mtime": 1789929838.914755,
+    "seen": 1789931286.3200188,
+    "ast_hash": "7a4740b924f9cb94ff2f3095540d26d9",
     "semantic_hash": ""
   },
   "serveis/psiquiatria.html": {
-    "mtime": 1789152446.3416598,
-    "seen": 1789153497.1551876,
-    "ast_hash": "90ca7f63ed980bea5328fe04774f1562",
+    "mtime": 1789929839.066544,
+    "seen": 1789931286.3200204,
+    "ast_hash": "5f52eafc571793962f4d7e01127fa265",
     "semantic_hash": ""
   },
   "serveis/reforc-escolar.html": {
-    "mtime": 1789152447.3744133,
-    "seen": 1789153497.1551912,
-    "ast_hash": "d13864a388ead96a9a16e1ec0c11ae4f",
+    "mtime": 1789929839.018646,
+    "seen": 1789931286.3200228,
+    "ast_hash": "21135c6dd070f6c04b3235bbb4d2d7fd",
     "semantic_hash": ""
   },
   "uad.html": {
-    "mtime": 1789152446.1238127,
-    "seen": 1789153497.155196,
-    "ast_hash": "748193db0a8de23a81e714b6ef9de81e",
+    "mtime": 1789929838.5162148,
+    "seen": 1789931286.3200252,
+    "ast_hash": "73104ed2a0cc33ea6daa3746d3324272",
     "semantic_hash": ""
   },
   "assets/favicon.svg": {
@@ -246,63 +246,63 @@
     "semantic_hash": "2477203e30363883acfd744d63067075"
   },
   "assets/img/team-andrea-martinez.webp": {
-    "mtime": 1789152215.4942777,
-    "seen": 1789152427.4220133,
-    "ast_hash": "18a1184cd6dfad03a093439c69d57f28",
+    "mtime": 1789929052.154478,
+    "seen": 1789931286.6566,
+    "ast_hash": "0521faca0be501dae446d130e7bf63a7",
     "semantic_hash": ""
   },
   "assets/img/team-anna-cantudo.webp": {
-    "mtime": 1789152215.5344858,
-    "seen": 1789152427.4220166,
-    "ast_hash": "03ab05cde98e5b8370fa1f2840934d71",
+    "mtime": 1789929051.489081,
+    "seen": 1789931286.656605,
+    "ast_hash": "54974e79662cc24178e3ffb57ec2249c",
     "semantic_hash": ""
   },
   "assets/img/team-anna-de-pablos.webp": {
-    "mtime": 1789152215.5666065,
-    "seen": 1789152427.422019,
-    "ast_hash": "d005e88d293af8de9bf1b011f8c47675",
+    "mtime": 1789929696.7386022,
+    "seen": 1789931286.6566086,
+    "ast_hash": "63362cce55788fd72776a7456760af03",
     "semantic_hash": ""
   },
   "assets/img/team-enya-panadero.webp": {
-    "mtime": 1789152215.6047611,
-    "seen": 1789152427.4220216,
-    "ast_hash": "ed613cb5765b62b874c18cb86a81101d",
+    "mtime": 1789929052.4812264,
+    "seen": 1789931286.6566117,
+    "ast_hash": "c11edce89e6c4150d6e975c6675f0a07",
     "semantic_hash": ""
   },
   "assets/img/team-jose-perez.webp": {
-    "mtime": 1789152215.6356897,
-    "seen": 1789152427.4220247,
-    "ast_hash": "6ac207f51b6fc45eb47bdaf02b3d3632",
+    "mtime": 1789929696.8996503,
+    "seen": 1789931286.6566145,
+    "ast_hash": "f51163c9a53d370ffbdbd6b6ae720537",
     "semantic_hash": ""
   },
   "assets/img/team-laia-pons.webp": {
-    "mtime": 1789152215.6746416,
-    "seen": 1789152427.4220266,
-    "ast_hash": "3c700a1dd4f277bc0f8eca9ecea49c05",
+    "mtime": 1789929696.5445368,
+    "seen": 1789931286.6566188,
+    "ast_hash": "16059517d0d9980ecf3e08197a9d9a0d",
     "semantic_hash": ""
   },
   "assets/img/team-laia-salas.webp": {
-    "mtime": 1789152215.7160149,
-    "seen": 1789152427.4220293,
-    "ast_hash": "030516efffc49a652b6b5329e1203f6b",
+    "mtime": 1789929052.8199942,
+    "seen": 1789931286.6566222,
+    "ast_hash": "ed227cbbd41bbb9f1fa86d7ecb638b42",
     "semantic_hash": ""
   },
   "assets/img/team-maria-carrillo.webp": {
-    "mtime": 1789152215.7478397,
-    "seen": 1789152427.4220319,
-    "ast_hash": "4eeaac17b2f53e09918bb2b5ec0fdba2",
+    "mtime": 1789929053.1639912,
+    "seen": 1789931286.6566253,
+    "ast_hash": "524010d586cd74c5a75b3ab9287f26b1",
     "semantic_hash": ""
   },
   "assets/img/team-maria-de-pablo.webp": {
-    "mtime": 1789152215.7845106,
-    "seen": 1789152427.422034,
-    "ast_hash": "5c1e16f9f66cf34a7f351dad0a4e5771",
+    "mtime": 1789929053.5374658,
+    "seen": 1789931286.656628,
+    "ast_hash": "3856de7f1862b1fbfc82313cf2150f2a",
     "semantic_hash": ""
   },
   "assets/img/team-maria-rodriguez.webp": {
-    "mtime": 1789152215.816058,
-    "seen": 1789152427.4220362,
-    "ast_hash": "e5e7928785454f73253888c3d1159fbf",
+    "mtime": 1789929053.9281383,
+    "seen": 1789931286.6566312,
+    "ast_hash": "9a52d22fe25d4289f960e92db749b131",
     "semantic_hash": ""
   },
   "assets/img/uad-materials.webp": {
@@ -330,9 +330,9 @@
     "semantic_hash": ""
   },
   "assets/img/team-ana-dominguez.webp": {
-    "mtime": 1789152224.9610271,
-    "seen": 1789152427.4220076,
-    "ast_hash": "38a46fcac9af76e77dc6d6fdb93687e3",
+    "mtime": 1789929051.889369,
+    "seen": 1789931286.6565921,
+    "ast_hash": "89648e2f55e14db0efacce320b64a483",
     "semantic_hash": ""
   },
   ".claude/settings.local.json": {
@@ -651,6 +651,24 @@
     "mtime": 1789152221.5501099,
     "seen": 1789152427.0795903,
     "ast_hash": "8bd5db57ad890f19156f8c8104a6f123",
+    "semantic_hash": ""
+  },
+  ".impeccable/config.json": {
+    "mtime": 1789928478.7455328,
+    "seen": 1789931284.9049861,
+    "ast_hash": "3187d89a7a6db519ac6a75282a654972",
+    "semantic_hash": ""
+  },
+  "package.json": {
+    "mtime": 1789323408.8665457,
+    "seen": 1789931284.9050016,
+    "ast_hash": "0dfdca8377bb02486dd91268150b7446",
+    "semantic_hash": ""
+  },
+  "PRAGMA_Empresa_Dossier.md": {
+    "mtime": 1789929345.1378806,
+    "seen": 1789931286.311884,
+    "ast_hash": "6068bbcb8fdad3c913722bb082b8266d",
     "semantic_hash": ""
   }
 }
