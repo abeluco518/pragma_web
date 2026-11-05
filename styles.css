@@ -1721,3 +1721,19 @@ section[id] { scroll-margin-top: 5.5rem; }
 .no-js [data-reveal] { opacity: 1; transform: none; }
 .no-js .splash { display: none; }
 .no-js .hero-title .row > span { transform: none; }
+
+/* =============================================================
+   MÒBIL / TÀCTIL: zones de toc ≥ 44px i text mínim llegible
+   ============================================================= */
+@media (pointer: coarse), (max-width: 700px) {
+  :root { --step--2: clamp(0.78rem, 0.76rem + 0.1vw, 0.84rem); }
+  .brand { padding-block: .5rem; }
+  .footer-col ul { gap: 0; }
+  .footer-col a,
+  .footer-legal a { display: inline-block; padding-block: .7rem; }
+  .footer-legal { gap: 0 1.5rem; }
+  .service-row .service-link,
+  .bs-link,
+  .link-underline { padding-block: .7rem; }
+  .link-underline::after { bottom: .6rem; }
+}
