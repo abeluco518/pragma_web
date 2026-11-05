@@ -59,3 +59,8 @@
 </IfModule>
 
 ErrorDocument 404 /404.html
+
+# Credencials SMTP: mai accessibles des del navegador
+<Files "correu-config.php">
+  Require all denied
+</Files>
