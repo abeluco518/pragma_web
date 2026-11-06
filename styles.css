@@ -524,6 +524,14 @@ h1 em, h2 em, h3 em {
   transition: opacity .25s var(--ease-out), transform .25s var(--ease-out), visibility 0s .25s;
   z-index: 60;
 }
+/* Pont invisible sobre el buit (margin-top) entre l'enllaç i el desplegable:
+   sense ell, en baixar el cursor es perd el :hover i el menú es tanca. */
+.nav-dropdown::before {
+  content: "";
+  position: absolute;
+  left: 0; right: 0;
+  top: -1.2rem; height: 1.2rem;
+}
 .nav-drop:hover .nav-dropdown,
 .nav-drop:focus-within .nav-dropdown {
   opacity: 1;
