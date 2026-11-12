@@ -1,0 +1,5 @@
+/mnt/c/Users/abelc/Desktop/Pragma projects/web-pragma-grup/assets/img/new-images/imagen-ejemplo-sin-editar.jpeg
+/mnt/c/Users/abelc/Desktop/Pragma projects/web-pragma-grup/assets/img/new-images/insitut-pasant-test.jpeg
+/mnt/c/Users/abelc/Desktop/Pragma projects/web-pragma-grup/assets/img/new-images/insitut-sala-exploracions.jpeg
+/mnt/c/Users/abelc/Desktop/Pragma projects/web-pragma-grup/assets/img/new-images/institut-clase-grup1.jpeg
+/mnt/c/Users/abelc/Desktop/Pragma projects/web-pragma-grup/assets/img/new-images/institut-clase-grup2.jpeg

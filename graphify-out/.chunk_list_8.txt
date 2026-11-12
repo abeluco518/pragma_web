@@ -1,0 +1,5 @@
+/mnt/c/Users/abelc/Desktop/Pragma projects/web-pragma-grup/assets/img/serv-logopedia.webp
+/mnt/c/Users/abelc/Desktop/Pragma projects/web-pragma-grup/assets/img/serv-psicologia-clinica.webp
+/mnt/c/Users/abelc/Desktop/Pragma projects/web-pragma-grup/assets/img/serv-reforc-escolar.webp
+/mnt/c/Users/abelc/Desktop/Pragma projects/web-pragma-grup/assets/img/team-ana-dominguez.webp
+/mnt/c/Users/abelc/Desktop/Pragma projects/web-pragma-grup/assets/img/team-andrea-martinez.webp

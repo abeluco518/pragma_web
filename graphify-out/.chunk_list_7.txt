@@ -1,0 +1,5 @@
+/mnt/c/Users/abelc/Desktop/Pragma projects/web-pragma-grup/assets/img/new-images/institut-sala-grups1.jpeg
+/mnt/c/Users/abelc/Desktop/Pragma projects/web-pragma-grup/assets/img/new-images/intstitut-zona-cafe.jpeg
+/mnt/c/Users/abelc/Desktop/Pragma projects/web-pragma-grup/assets/img/nosaltres-archive.webp
+/mnt/c/Users/abelc/Desktop/Pragma projects/web-pragma-grup/assets/img/serv-grups.webp
+/mnt/c/Users/abelc/Desktop/Pragma projects/web-pragma-grup/assets/img/serv-habilitats.webp

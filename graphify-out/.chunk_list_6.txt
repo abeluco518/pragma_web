@@ -1,0 +1,5 @@
+/mnt/c/Users/abelc/Desktop/Pragma projects/web-pragma-grup/assets/img/new-images/institut-despatx1.jpeg
+/mnt/c/Users/abelc/Desktop/Pragma projects/web-pragma-grup/assets/img/new-images/institut-despatx2.jpeg
+/mnt/c/Users/abelc/Desktop/Pragma projects/web-pragma-grup/assets/img/new-images/institut-rebedor.jpeg
+/mnt/c/Users/abelc/Desktop/Pragma projects/web-pragma-grup/assets/img/new-images/institut-rebedor2.jpeg
+/mnt/c/Users/abelc/Desktop/Pragma projects/web-pragma-grup/assets/img/new-images/institut-sala-espera.jpeg

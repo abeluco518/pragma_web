@@ -1,0 +1,5 @@
+/mnt/c/Users/abelc/Desktop/Pragma projects/web-pragma-grup/assets/img/team-laia-salas.webp
+/mnt/c/Users/abelc/Desktop/Pragma projects/web-pragma-grup/assets/img/team-maria-carrillo.webp
+/mnt/c/Users/abelc/Desktop/Pragma projects/web-pragma-grup/assets/img/team-maria-de-pablo.webp
+/mnt/c/Users/abelc/Desktop/Pragma projects/web-pragma-grup/assets/img/team-maria-rodriguez.webp
+/mnt/c/Users/abelc/Desktop/Pragma projects/web-pragma-grup/assets/img/uad-materials.webp

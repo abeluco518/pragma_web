@@ -1,0 +1,12 @@
+/mnt/c/Users/abelc/Desktop/Pragma projects/web-pragma-grup/404.html
+/mnt/c/Users/abelc/Desktop/Pragma projects/web-pragma-grup/COM-EDITAR.md
+/mnt/c/Users/abelc/Desktop/Pragma projects/web-pragma-grup/PRAGMA_Empresa_Dossier.md
+/mnt/c/Users/abelc/Desktop/Pragma projects/web-pragma-grup/ajudes-i-suport.html
+/mnt/c/Users/abelc/Desktop/Pragma projects/web-pragma-grup/clinic.html
+/mnt/c/Users/abelc/Desktop/Pragma projects/web-pragma-grup/contacte.html
+/mnt/c/Users/abelc/Desktop/Pragma projects/web-pragma-grup/empresa.html
+/mnt/c/Users/abelc/Desktop/Pragma projects/web-pragma-grup/equip.html
+/mnt/c/Users/abelc/Desktop/Pragma projects/web-pragma-grup/index.html
+/mnt/c/Users/abelc/Desktop/Pragma projects/web-pragma-grup/institut.html
+/mnt/c/Users/abelc/Desktop/Pragma projects/web-pragma-grup/legal/avis-legal.html
+/mnt/c/Users/abelc/Desktop/Pragma projects/web-pragma-grup/legal/politica-cookies.html

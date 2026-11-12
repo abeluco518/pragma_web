@@ -1,0 +1,5 @@
+/mnt/c/Users/abelc/Desktop/Pragma projects/web-pragma-grup/assets/img/associacio-rebedor.webp
+/mnt/c/Users/abelc/Desktop/Pragma projects/web-pragma-grup/assets/img/clinic-room.webp
+/mnt/c/Users/abelc/Desktop/Pragma projects/web-pragma-grup/assets/img/clinic-wide.webp
+/mnt/c/Users/abelc/Desktop/Pragma projects/web-pragma-grup/assets/img/hero-portrait.webp
+/mnt/c/Users/abelc/Desktop/Pragma projects/web-pragma-grup/assets/img/institut-room.webp

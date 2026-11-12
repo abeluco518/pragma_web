@@ -1,0 +1,11 @@
+/mnt/c/Users/abelc/Desktop/Pragma projects/web-pragma-grup/legal/politica-privacitat.html
+/mnt/c/Users/abelc/Desktop/Pragma projects/web-pragma-grup/nosaltres.html
+/mnt/c/Users/abelc/Desktop/Pragma projects/web-pragma-grup/serveis/grups-terapeutics.html
+/mnt/c/Users/abelc/Desktop/Pragma projects/web-pragma-grup/serveis/habilitats-socials.html
+/mnt/c/Users/abelc/Desktop/Pragma projects/web-pragma-grup/serveis/logopedia.html
+/mnt/c/Users/abelc/Desktop/Pragma projects/web-pragma-grup/serveis/psicologia-clinica.html
+/mnt/c/Users/abelc/Desktop/Pragma projects/web-pragma-grup/serveis/psicologia.html
+/mnt/c/Users/abelc/Desktop/Pragma projects/web-pragma-grup/serveis/psicopedagogia.html
+/mnt/c/Users/abelc/Desktop/Pragma projects/web-pragma-grup/serveis/psiquiatria.html
+/mnt/c/Users/abelc/Desktop/Pragma projects/web-pragma-grup/serveis/reforc-escolar.html
+/mnt/c/Users/abelc/Desktop/Pragma projects/web-pragma-grup/uad.html
