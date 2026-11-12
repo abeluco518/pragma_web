@@ -30,7 +30,9 @@ $cos = '';
 foreach ($camps as $k => $etiqueta) if ($d[$k] !== '') $cos .= "$etiqueta: {$d[$k]}\n";
 
 $assumpte = mb_encode_mimeheader("Nova consulta web – $nom", 'UTF-8');
-$config = is_file(__DIR__ . '/correu-config.php') ? require __DIR__ . '/correu-config.php' : null;
+// Primer a la carpeta de dalt (fora de public_html: els desplegaments no la toquen), després al costat.
+$fitxerConfig = array_values(array_filter([dirname(__DIR__) . '/correu-config.php', __DIR__ . '/correu-config.php'], 'is_file'))[0] ?? null;
+$config = $fitxerConfig ? require $fitxerConfig : null;
 
 if ($config) {
   // SMTP autenticat amb el buzó real (fiable). Credencials a correu-config.php (no es puja a git).
