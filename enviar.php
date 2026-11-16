@@ -2,7 +2,7 @@
 // Rep el formulari de contacte (contacte.html i portada) i l'envia per correu.
 // Envia per SMTP amb el buzó real (correu-config.php). No desa res al servidor ni escriu logs
 // (el missatge pot contenir dades de salut).
-const DESTI = 'info@institutpragma.com';
+const DESTI = 'info@pragmagrup.com';
 
 header('Content-Type: application/json; charset=utf-8');
 function fi(bool $ok, int $codi = 200): void { http_response_code($codi); echo json_encode(['ok' => $ok]); exit; }
@@ -23,7 +23,7 @@ $email = filter_var($d['email'], FILTER_VALIDATE_EMAIL); // també bloqueja salt
 if ($d['nom'] === '' || $d['missatge'] === '' || !$email || empty($_POST['privacitat'])) fi(false, 400);
 
 $host = preg_replace('/^www\./i', '', (string)($_SERVER['HTTP_HOST'] ?? ''));
-if (!preg_match('/^[a-z0-9.-]+$/i', $host)) $host = 'institutpragma.com';
+if (!preg_match('/^[a-z0-9.-]+$/i', $host)) $host = 'pragmagrup.com';
 
 $nom = preg_replace('/[\r\n]+/', ' ', trim($d['nom'] . ' ' . $d['cognoms']));
 $cos = '';

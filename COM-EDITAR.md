@@ -27,7 +27,7 @@ Reglas:
 - Escribe el texto **entre las comillas**. No borres las comas ni los corchetes.
 - Si un dato todavía no lo tienes, deja `"[PENDENT]"`. **No inventes datos**
   (colegiaciones, testimonios...).
-- El formulario envía los mensajes a `info@institutpragma.com` mediante `enviar.php` (hay que subirlo a Hostinger junto con el resto; el destinatario se cambia en la línea `DESTI` de ese archivo). Si `formEndpoint` queda vacío, el formulario solo simula el envío.
+- El formulario envía los mensajes a `info@pragmagrup.com` mediante `enviar.php` (hay que subirlo a Hostinger junto con el resto; el destinatario se cambia en la línea `DESTI` de ese archivo). Si `formEndpoint` queda vacío, el formulario solo simula el envío.
 
 ### El equipo (`team`)
 

@@ -64,3 +64,11 @@ ErrorDocument 404 /404.html
 <Files "correu-config.php">
   Require all denied
 </Files>
+
+# Fitxers interns del repositori: mai accessibles des del navegador
+<FilesMatch "^(CLAUDE\.md|COM-EDITAR\.md|PRAGMA_Empresa_Dossier\.md|package\.json|correu-config\.example\.php|\.gitignore)$">
+  Require all denied
+</FilesMatch>
+<IfModule mod_rewrite.c>
+  RewriteRule ^(\.claude|\.impeccable|graphify-out)(/|$) - [R=404,L]
+</IfModule>
