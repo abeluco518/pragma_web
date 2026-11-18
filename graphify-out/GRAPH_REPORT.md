@@ -1,16 +1,16 @@
-# Graph Report - web-pragma-grup  (2026-11-12)
+# Graph Report - web-pragma-grup  (2026-11-18)
 
 ## Corpus Check
-- 64 files · ~563,130 words
+- 64 files · ~565,397 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1322 nodes · 2838 edges · 104 communities (85 shown, 15 thin omitted)
+- 1320 nodes · 2837 edges · 104 communities (86 shown, 14 thin omitted)
 - Extraction: 96% EXTRACTED · 4% INFERRED · 0% AMBIGUOUS · INFERRED: 118 edges (avg confidence: 0.84)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `5b17a98b`
+- Built from commit: `abe17d2d`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -32,7 +32,7 @@
 - Enya Panadero Portrait
 - Jose Perez Portrait
 - Laia Pons Portrait
-- Laia Salas Portrait
+- initGlobalBar
 - Maria Carrillo Portrait
 - Maria De Pablo Portrait
 - Maria Rodriguez Portrait
@@ -64,15 +64,15 @@
 - Handle `generate`
 - Generate Report
 - SKILL.md
-- cleanup
+- showBar
 - New visual work
 - optimize.md
 - Scan mode (approach C: auto-extract, then confirm descriptive language)
-- showBar
+- refreshParamsPanel
 - critique.md
 - Simplify the Design
 - Hardening Dimensions
-- documentRefForElement
+- documentRefSegment
 - clarify.md
 - Nielsen's 10 Heuristics
 - document.md
@@ -102,7 +102,7 @@
 - Impeccable Asset Producer
 - Impeccable Finish Reviewer
 - Impeccable Manual Edit Applier
-- handleGo
+- findVariantsWrapper
 - live-browser-ignores.js
 - Diagnostic Scan
 - bolder.md
@@ -113,8 +113,8 @@
 - Impeccable Documenter
 - Heuristics Scoring Guide
 - initDesignPanel
-- startVoice
-- buildColorModels
+- buildParamsPanel
+- injectSvelteComponentsFromManifest
 
 ## God Nodes (most connected - your core abstractions)
 1. `setLiveState()` - 32 edges
@@ -151,11 +151,10 @@
 - **Clinic Consultation Space Photo Set** — assets_img_clinic_room_clinic_room, assets_img_clinic_wide_clinic_wide, assets_img_hero_portrait_hero_portrait [INFERRED 0.80]
 - **Clinical and Educational Service Illustration Set** — assets_img_serv_grups_group_therapy_room_photo, assets_img_serv_habilitats_social_skills_circle_photo, assets_img_serv_logopedia_speech_therapy_tools_photo, assets_img_serv_psicologia_clinica_therapy_corner_photo, assets_img_serv_psicologia_play_therapy_table_photo, assets_img_serv_psicopedagogia_study_desk_photo, assets_img_serv_psiquiatria_consultation_desk_photo, assets_img_serv_reforc_escolar_study_desk_photo [INFERRED 0.80]
 - **Orientació de l'usuari cap al servei adequat** — index_orientador, contacte_formulari_contacte, institut_pragma_institut, clinic_pragma_clinic, uad_uad [INFERRED 0.80]
-- **Team Member Portrait Photo Set** — assets_img_team_andrea_martinez_andrea_martinez_portrait, assets_img_team_anna_cantudo_anna_cantudo_portrait, assets_img_team_anna_de_pablos_anna_de_pablos_portrait, assets_img_team_enya_panadero_enya_panadero_portrait, assets_img_team_jose_perez_jose_perez_portrait, assets_img_team_laia_pons_laia_pons_portrait, assets_img_team_laia_salas_laia_salas_portrait, assets_img_team_maria_carrillo_maria_carrillo_portrait, assets_img_team_maria_de_pablo_maria_de_pablo_portrait, assets_img_team_maria_rodriguez_maria_rodriguez_portrait [INFERRED 0.85]
 - **Pragma Clínic clinical services** — serveis_psicologia_clinica_clinical_psychology, serveis_psiquiatria_psychiatry, serveis_grups_terapeutics_therapeutic_groups [INFERRED 0.90]
 - **Pragma Institut development and learning services** — serveis_logopedia_speech_therapy, serveis_psicopedagogia_educational_psychology, serveis_psicologia_child_youth_psychology, serveis_reforc_escolar_school_support, serveis_habilitats_socials_social_skills_groups [INFERRED 0.90]
 
-## Communities (104 total, 15 thin omitted)
+## Communities (104 total, 14 thin omitted)
 
 ### Community 0 - "main.js"
 Cohesion: 0.16
@@ -167,7 +166,7 @@ Nodes (37): Pàgina d'error 404, Ajudes i suport (vessant social), Coordinació 
 
 ### Community 2 - "live-browser.js"
 Cohesion: 0.04
-Nodes (72): applyGlobalBarLabelState(), applyParamValue(), applyPlaceholderSizingStyles(), buildInsertPlaceholderSnapshotFromDom(), buildLocatorForLeaf(), buildPickedAnchorSnapshot(), checkpointPayload(), computeInsertPosition() (+64 more)
+Nodes (69): applyPlaceholderSizingStyles(), buildInsertPlaceholderSnapshotFromDom(), buildLocatorForLeaf(), buildPickedAnchorSnapshot(), buildPlaceholderResizeHandles(), checkpointPayload(), clampVariantIndex(), clearHandled() (+61 more)
 
 ### Community 3 - "Institut Room (Wide, Children's Learning Space)"
 Cohesion: 0.25
@@ -197,49 +196,53 @@ Nodes (4): Group Therapy Room Photo, Group Therapy Service, Social Skills Chair 
 Cohesion: 0.50
 Nodes (4): Clinical Psychology Service, Clinical Psychology Therapy Corner Photo, Play Therapy Table Photo, Psychology Service
 
+### Community 17 - "initGlobalBar"
+Cohesion: 0.12
+Nodes (25): agentHasWorkInFlight(), agentStatusText(), barPaletteForTheme(), brandMarkSvg(), buildSavingRow(), detectPageTheme(), ensureAgentPollTooltip(), ensureSpinKeyframes() (+17 more)
+
 ### Community 26 - "el"
-Cohesion: 0.05
-Nodes (72): actionLabel(), agentHasWorkInFlight(), agentStatusText(), barPaletteForTheme(), bindConfigureCountPillTooltip(), bindConfigureInlineControlHover(), bindConfigureModifierPillHover(), brandMarkSvg() (+64 more)
+Cohesion: 0.10
+Nodes (39): actionLabel(), bindConfigureCountPillTooltip(), bindConfigureInlineControlHover(), bindConfigureModifierPillHover(), buildConfigureActionControl(), buildConfigureCountControl(), buildConfigureRow(), buildConfigureSubmitButton() (+31 more)
 
 ### Community 27 - "initPageChat"
-Cohesion: 0.10
-Nodes (42): armPageChatForTyping(), attachSteerFocusDebug(), attachSteerFocusGuard(), buildSteerProcessingDots(), buildSteerQueueHint(), clearSteerAwaitTimer(), clearSteerFocusRecoverTimer(), collapsePageChat() (+34 more)
+Cohesion: 0.08
+Nodes (51): applyGlobalBarLabelState(), armPageChatForTyping(), attachSteerFocusDebug(), attachSteerFocusGuard(), buildSteerProcessingDots(), buildSteerQueueHint(), clearSteerAwaitTimer(), clearSteerFocusRecoverTimer() (+43 more)
 
 ### Community 28 - "resolveLiveInjectionAnchor"
 Cohesion: 0.16
 Nodes (19): buildSvelteExpressionTextMap(), buildSveltePropValuesFromLiveElement(), buildSveltePropValuesV2(), cloneWithoutElements(), collectTextNodes(), collectVisibleTexts(), cssEscapeIdent(), elementMatchesOriginalMarkup() (+11 more)
 
 ### Community 29 - "setLiveState"
-Cohesion: 0.19
-Nodes (35): applyEditing(), beginNewLiveConfiguration(), cancelEditing(), cancelEditingToPicking(), cancelInsertConfigure(), clearAnnotations(), clearInsertPicking(), disableInlineEdit() (+27 more)
+Cohesion: 0.08
+Nodes (75): abortSvelteComponentInjection(), applyEditing(), beginNewLiveConfiguration(), cancelEditing(), cancelEditingToPicking(), cancelInsertConfigure(), captureAndEmit(), cleanup() (+67 more)
 
 ### Community 30 - "renderDesignVisual"
-Cohesion: 0.10
-Nodes (29): buildCollapsible(), buildListHtml(), buildRadiiModels(), copyToClipboard(), cssSafe(), designEmptyMessage(), escapeHtml(), fontStack() (+21 more)
+Cohesion: 0.08
+Nodes (36): buildCollapsible(), buildColorModels(), buildListHtml(), buildRadiiModels(), buildTypographyModels(), copyToClipboard(), cssSafe(), designEmptyMessage() (+28 more)
 
 ### Community 31 - "resumeSession"
-Cohesion: 0.18
-Nodes (26): applySavedSessionMeta(), clampVariantIndex(), clearHandled(), connectSSE(), enterRecoveryWaitingForAnchor(), findAdoptableServerSession(), findAnyVariantsWrapper(), injectSvelteComponentsFromManifest() (+18 more)
+Cohesion: 0.23
+Nodes (19): applySavedSessionMeta(), clearSession(), connectSSE(), findActiveSessionSummary(), findAdoptableServerSession(), findAnyVariantsWrapper(), isFrameworkComponentPreviewMode(), isSessionHandled() (+11 more)
 
 ### Community 32 - "normalizeManualContextText"
-Cohesion: 0.12
-Nodes (20): addManualContextText(), canRestoreManualEditElement(), collectManualContextPieces(), walk(), contextElementForManualEdit(), cssIdent(), directMixedTextRestoreNodes(), findManualEditRestoreElement() (+12 more)
+Cohesion: 0.13
+Nodes (19): addManualContextText(), canRestoreManualEditElement(), collectManualContextPieces(), walk(), contextElementForManualEdit(), cssIdent(), directMixedTextRestoreNodes(), findManualEditRestoreElement() (+11 more)
 
 ### Community 33 - "handleManualEditActivity"
-Cohesion: 0.17
-Nodes (26): clearStoredManualApplyState(), fetchPendingCount(), handleManualEditActivity(), hidePendingApplyDock(), manualApplyLoadingText(), manualApplyStateKey(), manualEditEventForCurrentPage(), numberOrNull() (+18 more)
+Cohesion: 0.19
+Nodes (24): clearStoredManualApplyState(), fetchPendingCount(), handleManualEditActivity(), hidePendingApplyDock(), manualApplyLoadingText(), manualApplyStateKey(), manualEditEventForCurrentPage(), numberOrNull() (+16 more)
 
 ### Community 34 - "mountSvelteComponentVariant"
-Cohesion: 0.17
-Nodes (17): applyOriginalAttrsToSvelteAnchor(), commitAcceptedSvelteComponentToDom(), componentModuleCandidates(), cyclingCounterText(), cyclingShownVariant(), describeMountFailure(), detectDevServerBase(), findInsertAnchorInDom() (+9 more)
+Cohesion: 0.21
+Nodes (14): applyOriginalAttrsToSvelteAnchor(), commitAcceptedSvelteComponentToDom(), componentModuleCandidates(), describeMountFailure(), detectDevServerBase(), getMountedSvelteComponentAnchor(), getVisibleVariantEl(), importFirstReachable() (+6 more)
 
 ### Community 35 - "Responsive Design"
 Cohesion: 0.08
 Nodes (25): Assess Adaptation Challenge, Breakpoints: Content-Driven, Content Adaptation, Desktop Adaptation (Mobile → Desktop), Detect Input Method, Not Just Screen Size, Email Adaptation (Web → Email), Implement Adaptations, Layout Adaptation Patterns (+17 more)
 
 ### Community 36 - "showToast"
-Cohesion: 0.17
-Nodes (16): abandonForeignSession(), discardOrphanedSession(), dismissToast(), handleAccept(), handleDiscard(), markSessionHandled(), maybeCompleteSteer(), maybePrefetchPage() (+8 more)
+Cohesion: 0.16
+Nodes (20): abandonForeignSession(), discardOrphanedSession(), enterRecoveryWaitingForAnchor(), handleAccept(), handleDiscard(), injectVariantsFromSource(), isSvelteComponentManifestPath(), markSessionHandled() (+12 more)
 
 ### Community 37 - "captureElementToBlob"
 Cohesion: 0.11
@@ -262,16 +265,16 @@ Cohesion: 0.10
 Nodes (20): Animate complex properties, Assess What "Extraordinary" Means Here, For data-heavy interfaces, For functional UI, For performance-critical UI, For visual/marketing surfaces, Implement with Discipline, Interact with the device (+12 more)
 
 ### Community 42 - "onAnnotDown"
-Cohesion: 0.15
-Nodes (21): applyPlaceholderDimensions(), beginEditPin(), buildAnnotationsForCapture(), buildPinElement(), cancelEditingPin(), clampPlaceholderSize(), finalizeEditingPin(), initAnnotOverlay() (+13 more)
+Cohesion: 0.16
+Nodes (20): beginEditPin(), buildAnnotationsForCapture(), buildPinElement(), cancelEditingPin(), clampPlaceholderSize(), finalizeEditingPin(), initAnnotOverlay(), localCoords() (+12 more)
 
 ### Community 43 - "createLiveBrowserSessionState"
 Cohesion: 0.21
 Nodes (15): createLiveBrowserSessionState(), clearHandled(), clearScrollY(), clearSession(), isHandled(), loadSession(), markHandled(), nextCheckpointRevision() (+7 more)
 
 ### Community 44 - "startVariantObserver"
-Cohesion: 0.16
-Nodes (27): commitAcceptedVariantToDom(), completeParameterGenerationIfReady(), completeParameterPublication(), completeSourceInjection(), ensureInsertPlaceholder(), finalizeInsertSession(), findVariantsWrapper(), getMountedSvelteComponentAnchor() (+19 more)
+Cohesion: 0.30
+Nodes (15): completeParameterGenerationIfReady(), completeParameterPublication(), completeSourceInjection(), finalizeInsertSession(), hideShaderOverlay(), pickVariantContent(), positionBar(), removeInsertPlaceholderDom() (+7 more)
 
 ### Community 45 - "animate.md"
 Cohesion: 0.12
@@ -293,9 +296,9 @@ Nodes (14): 1. Accessibility (A11y), 2. Performance, 3. Theming, 4. Responsive D
 Cohesion: 0.15
 Nodes (10): Craft floor, Refuse, Verify, Command guidance, No-argument routing: the context-aware menu, Workflow questions, Commands, How to design (+2 more)
 
-### Community 50 - "cleanup"
-Cohesion: 0.31
-Nodes (14): abortSvelteComponentInjection(), cleanup(), cleanupAcceptedSession(), clearScrollY(), clearSession(), handleServerLost(), hideShaderOverlay(), recoverEmptyCycling() (+6 more)
+### Community 50 - "showBar"
+Cohesion: 0.26
+Nodes (13): applyConfigureBarChrome(), buildCyclingRow(), buildDots(), buildGeneratingRow(), cycleVariant(), cyclingCounterText(), cyclingShownVariant(), dismissToast() (+5 more)
 
 ### Community 51 - "New visual work"
 Cohesion: 0.14
@@ -309,9 +312,9 @@ Nodes (13): Animation Performance, Assess Performance Issues, Core Web Vitals Op
 Cohesion: 0.15
 Nodes (13): Component translation rules, Narrative mapping, Scan mode (approach C: auto-extract, then confirm descriptive language), Schema, Step 1: Find the design assets, Step 2: Auto-extract what can be auto-extracted, Step 2b: Stage the frontmatter, Step 3: Ask the user for qualitative language (+5 more)
 
-### Community 54 - "showBar"
-Cohesion: 0.16
-Nodes (21): applyConfigureBarChrome(), applyParamDefaults(), buildCyclingRow(), closedClipPath(), closeTunePopover(), cycleVariant(), ensureCyclingRenderable(), getVisibleVariantEl() (+13 more)
+### Community 54 - "refreshParamsPanel"
+Cohesion: 0.29
+Nodes (11): applyParamDefaults(), closedClipPath(), hideParamsPanel(), mountedParameterCount(), openTunePopover(), parseVariantParams(), popoverDirection(), positionParamsPanel() (+3 more)
 
 ### Community 55 - "critique.md"
 Cohesion: 0.17
@@ -325,9 +328,9 @@ Nodes (11): Assess Current State, Code Simplification, Content Simplification, D
 Cohesion: 0.17
 Nodes (11): Accessibility Resilience, Assess Hardening Needs, Edge Cases & Boundary Conditions, Error Handling, Hardening Dimensions, Input Validation & Sanitization, Internationalization (i18n), Performance Resilience (+3 more)
 
-### Community 58 - "documentRefForElement"
-Cohesion: 0.13
-Nodes (17): collectEditableTextRows(), visit(), copyEditContainerContext(), copyEditLeafContext(), documentRefClassSuffix(), documentRefForElement(), documentRefIdSuffix(), documentRefSegment() (+9 more)
+### Community 58 - "documentRefSegment"
+Cohesion: 0.40
+Nodes (6): documentRefClassSuffix(), documentRefIdSuffix(), documentRefSegment(), elementMatchesManualRefSegment(), indexAmongSameTag(), normalizeDocumentRefToken()
 
 ### Community 59 - "clarify.md"
 Cohesion: 0.18
@@ -410,8 +413,8 @@ Cohesion: 0.25
 Nodes (7): append-arrays, append-string, Config drift, Consent prompt (use this phrasing), CSP detection (first-time only), Troubleshooting, Write the config
 
 ### Community 79 - "syncEditBadgeHitProxies"
-Cohesion: 0.31
-Nodes (9): bindEditBadgeProxy(), editBadgeProxyTargets(), initEditBadge(), initEditBadgeHitProxies(), proxyMouseEvent(), setImportantStyle(), styleEditBadgeProxy(), syncEditBadgeHitProxies() (+1 more)
+Cohesion: 0.27
+Nodes (10): bindEditBadgeProxy(), editBadgeProxyTargets(), initEditBadge(), initEditBadgeHitProxies(), positionEditBadge(), proxyMouseEvent(), setImportantStyle(), styleEditBadgeProxy() (+2 more)
 
 ### Community 80 - "Impeccable Asset Producer"
 Cohesion: 0.29
@@ -445,9 +448,9 @@ Nodes (6): Checks, in order, Disposition, Impeccable Finish Reviewer, Input Cont
 Cohesion: 0.29
 Nodes (6): Checks, Entry Atomicity, Impeccable Manual Edit Applier, Input Contract, Output Contract, Workflow
 
-### Community 88 - "handleGo"
-Cohesion: 0.39
-Nodes (9): captureAndEmit(), clearMountErrorCard(), extractContext(), handleGo(), handleInsertCreate(), resolveScrollLockAnchorTop(), startScrollLock(), stopVoice() (+1 more)
+### Community 88 - "findVariantsWrapper"
+Cohesion: 0.33
+Nodes (10): applyPlaceholderDimensions(), ensureInsertPlaceholder(), findVariantsWrapper(), isInsertGeneratingSession(), pickPopulatedVariantsWrapper(), positionAnnotOverlay(), positionShaderOverlay(), resolveBarAnchor() (+2 more)
 
 ### Community 89 - "live-browser-ignores.js"
 Cohesion: 0.52
@@ -486,21 +489,21 @@ Cohesion: 0.50
 Nodes (4): Heuristics Scoring Guide, Issue Severity (P0–P3), Reference Material, Score Summary
 
 ### Community 98 - "initDesignPanel"
-Cohesion: 0.39
-Nodes (8): buildDesignHeader(), designPanelCss(), fetchDesignSystem(), initDesignPanel(), loadDesignPrefs(), renderDesignChrome(), saveDesignPrefs(), toggleDesignPanel()
+Cohesion: 0.48
+Nodes (7): buildDesignHeader(), designPanelCss(), fetchDesignSystem(), initDesignPanel(), loadDesignPrefs(), renderDesignChrome(), toggleDesignPanel()
 
-### Community 99 - "startVoice"
-Cohesion: 0.36
-Nodes (8): finishVoiceSession(), isEmbeddedPreviewBrowser(), releaseVoiceEngine(), startVoice(), steerSpeechRecognitionCtor(), steerVoiceErrorMessage(), steerVoiceUnavailableMessage(), syncVoiceUi()
-
-### Community 101 - "buildColorModels"
+### Community 99 - "buildParamsPanel"
 Cohesion: 0.33
-Nodes (6): buildColorModels(), buildTypographyModels(), findProseDescription(), humanizeKey(), normalizeCssColor(), splitFontFamily()
+Nodes (6): applyParamValue(), buildParamsPanel(), formatRangeValue(), updateVariantStateStylesheet(), variantParamDecls(), variantStateSelector()
+
+### Community 101 - "injectSvelteComponentsFromManifest"
+Cohesion: 0.47
+Nodes (6): findInsertAnchorInDom(), findLiveElementForSvelteManifest(), injectSvelteComponentsFromManifest(), isSvelteInsertManifest(), retryMountErrorCard(), waitForSvelteComponentTargetAndRetry()
 
 ## Knowledge Gaps
-- **463 isolated node(s):** `name`, `version`, `private`, `description`, `homepage` (+458 more)
-  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 493 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
-- **15 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **461 isolated node(s):** `name`, `version`, `private`, `description`, `homepage` (+456 more)
+  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 491 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
+- **14 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
@@ -510,12 +513,12 @@ _Questions this graph is uniquely positioned to answer:_
 - **Why does `Generate Combined Critique Report` connect `Generate Combined Critique Report` to `critique.md`?**
   _High betweenness centrality (0.009) - this node is a cross-community bridge._
 - **What connects `name`, `version`, `private` to the rest of the system?**
-  _463 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _461 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Pragma Institut` be split into smaller, more focused modules?**
   _Cohesion score 0.08708708708708708 - nodes in this community are weakly interconnected._
 - **Should `live-browser.js` be split into smaller, more focused modules?**
-  _Cohesion score 0.04147640791476408 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.040993788819875775 - nodes in this community are weakly interconnected._
 - **Should `modern-screenshot.umd.js` be split into smaller, more focused modules?**
   _Cohesion score 0.08959899749373433 - nodes in this community are weakly interconnected._
-- **Should `el` be split into smaller, more focused modules?**
-  _Cohesion score 0.0518326545723806 - nodes in this community are weakly interconnected._
+- **Should `initGlobalBar` be split into smaller, more focused modules?**
+  _Cohesion score 0.12307692307692308 - nodes in this community are weakly interconnected._
