@@ -195,9 +195,11 @@
       social.setAttribute("data-managed", "done");
       social.innerHTML = D.social.map(function (s) {
         var href = s.href || "#";
-        var pend = s.href ? "" : ' aria-disabled="true" title="Enllaç pendent"';
-        return '<a href="' + escHTML(href) + '"' + pend + ' aria-label="' + escHTML(s.name) + '">' +
-          '<svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="4"/></svg></a>';
+        var pend = s.href ? ' target="_blank" rel="noopener"' : ' aria-disabled="true" title="Enllaç pendent"';
+        var icon = s.name === "Instagram"
+          ? '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>'
+          : '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="12" cy="12" r="4"/></svg>';
+        return '<a href="' + escHTML(href) + '"' + pend + ' aria-label="' + escHTML(s.name) + '">' + icon + '</a>';
       }).join("");
     }
     $$('[data-brand-years]').forEach(function (el) { if (D.brand) el.textContent = D.brand.yearsLabel; });
