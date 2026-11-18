@@ -157,8 +157,9 @@
       rows.push(linkRow(telHref, iconPhone(), "Trucar", c.phone || "[PENDENT]"));
       if (c.whatsapp) rows.push(linkRow(c.whatsapp, iconChat(), "WhatsApp", c.whatsappNumber || "Obrir conversa"));
       rows.push(linkRow(c.email && c.email.indexOf("PENDENT") === -1 ? "mailto:" + c.email : "", iconMail(), "Escriure", c.email || "[PENDENT]"));
-      var firstCenter = (D.centers && D.centers[0]) || {};
-      rows.push(linkRow(firstCenter.mapUrl || "", iconPin(), "Com arribar", firstCenter.address || (D.brand ? D.brand.place : "Molins de Rei")));
+      (D.centers || []).forEach(function (ce) {
+        rows.push(linkRow(ce.mapUrl || "", iconPin(), "Com arribar: " + ce.name, ce.address));
+      });
       if (c.hours) {
         rows.push('<div class="contact-quick-row">' + iconClock() + '<span><strong>Horari</strong><br>' + escHTML(c.hours) + '</span></div>');
       }
@@ -174,6 +175,7 @@
             '<h3>' + escHTML(ce.name) + '</h3>' +
             '<p>' + escHTML(ce.address) + '</p>' +
             '<p>Horari: ' + escHTML(ce.hours) + '</p>' +
+            (ce.mapUrl ? '<p><a href="' + escHTML(ce.mapUrl) + '">Com arribar</a></p>' : '') +
           '</div>';
       }).join("");
     }
